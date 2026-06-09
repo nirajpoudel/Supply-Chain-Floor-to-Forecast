@@ -1,65 +1,4 @@
-# Understanding Operational Roles Before Learning Data
-
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⣿⠿⠶⠒⠶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⣠⡾⣻⢿⢟⣵⠃⠀⠀⢠⠀⢹⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⢰⣿⣴⣷⢫⣾⣞⠀⠀⠀⠀⢧⠀⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⢀⣿⣿⡿⣿⣿⣿⣿⠀⠀⠀⡆⡘⡄⢹⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⠇⣏⣹⡖⡄⡶⣾⣧⠇⢸⣾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⣿⣋⢿⣿⠲⠿⠊⢿⡽⣿⣽⠿⣤⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⢫⠿⣾⡟⠀⠀⠀⠈⠙⠂⠁⢰⣿⡽⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠈⠓⠻⣣⡀⠀⠀⠀⠀⠀⢠⡟⠑⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢷⠦⡀⠀⡠⣶⣏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣤⣼⣶⣿⣿⣿⠉⢷⣶⣶⣤⣤⣤⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⣠⡞⣿⣿⣿⣿⣿⣿⣿⣿⠀⠘⣞⢿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⣠⣾⡟⢰⣿⣿⣿⣿⣿⣿⣿⣿⠀⢀⣹⣮⣿⡏⣿⠿⣿⣿⣧⡀⠀⠀⠀⠀⠀
-⠀⠀⣀⣴⣾⢟⡞⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣦⣿⣠⡿⣛⢸⣷⡄⠀⠀⠀⠀
-⠀⢸⣿⣿⣿⣿⠿⠻⣿⣿⣿⣿⣿⣿⣿⣿⡻⢿⣿⣿⣿⣿⠸⣿⣿⣿⣿⡿⠿⣷⠀⠀⠀⠀
-⠀⢸⣿⣿⣿⡏⠰⢶⣿⣿⣿⣿⣿⣿⣷⢄⠉⠑⠈⠙⣿⣿⣷⣿⣿⣿⡿⠀⣀⣼⣧⡄⠀⠀
-⠀⢸⡿⣿⣿⣧⠀⠙⣿⣿⣿⣿⣿⣿⣿⡇⠁⠀⠀⠀⠈⢻⠻⣿⠛⠻⢿⣾⣯⣿⢿⣿⣦⠀
-⠀⢸⣿⣿⣯⣿⡆⢀⣿⣿⣿⣿⣿⣿⣿⣧⣄⡀⠀⠀⠀⡼⠀⣿⠀⣄⠀⠻⣿⣿⣦⢻⣿⠀
-⠀⢸⣿⣿⣿⢹⣿⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⠓⣼⣿⣿⣿⣦⡀⡈⢷⣝⣇⣿⣇
-⠀⢸⣿⣿⣿⡇⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣆⢹⣿⣿⣿
-⠀⢸⣿⡘⣿⣇⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⢿⣿⣷⣿⣿⡿
-⠀⢸⣿⣟⣿⣿⣤⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⣿⣿⣿⣿⣿⣿⠀⠀⠈⠉⠉⠉⠀
-⠀⠘⣿⣿⣾⣿⣿⣆⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠰⣿⢻⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⢹⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⢻⣧⣽⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀
-⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⡀⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀
-⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠁⠉⢿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀
-⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⡀⢹⣿⣿⣻⡄⠀⠀⠀⠀⠀
-⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀
-⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
-⠰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
-⠀⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣫⣿⡄⠀⠀⠀⠀
-⠀⠘⣏⣽⠿⠻⣿⣿⣿⠛⠿⠿⠿⠛⠛⠛⠛⠛⠋⠹⣿⣿⣿⣫⠽⢟⣽⠟⠽⠿⠀⠀⠀⠀
-⠀⠀⢷⠃⢀⣤⣿⣿⣿⡀⠉⠲⣄⡀⠀⠐⠒⢶⣦⣤⣿⣿⣿⡷⠞⠋⢹⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠸⡀⣎⣘⣻⣿⣿⠈⠳⢄⡀⠉⠲⣦⣄⣀⡀⠀⠘⢋⡁⠀⠀⢀⣼⡀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠹⣜⣿⢼⣿⡇⠀⠀⠀⠉⠳⢦⣄⣙⢻⠿⠛⠋⠉⣀⣐⣚⣩⠼⡅⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠈⠉⠙⣾⡇⠀⠀⠀⠀⠀⠀⢹⣿⢹⡗⠦⣤⣀⣀⣀⣀⣀⣠⡇⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠻⣇⠀⠀⠀⠀⠀⠀⠀⣿⠀⣧⡌⠛⢮⠉⠉⠛⠻⣯⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⣿⡀⠀⠀⠀⠀⠀⠀⢸⠀⢿⣷⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⡟⠀⢸⣿⠀⠀⠀⠀⠀⠈⣼⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⣇⠀⠀⣿⡆⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡇⠀⠀⠀⠀⠘⣿⠀⠀⢹⣧⠀⠀⠀⠀⠀⢿⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡇⢀⠤⢛⡓⢦⡸⡀⠀⠈⣿⡀⠀⠀⠀⠀⣸⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡇⠙⢲⣭⡼⡇⢁⡇⠀⣰⣿⡿⣌⣻⣭⡭⢿⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⠀⠠⢂⣴⠗⢻⢀⡼⡟⠈⢻⡄⢭⣍⣩⡟⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⢰⠋⠀⠀⣾⣿⠅⠃⠀⠀⢿⣌⡻⠋⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⢀⣼⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⣿⠀⢀⣴⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⠀⠀⠀⠀⠀⠀⣿⠀⣻⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⣿⣴⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⠀⡀⠀⠀⠀⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⢀⡶⠒⣿⣾⠁⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⣾⡉⠀⢿⠇⠀⠀⠀⠀⢷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⢻⡇⣴⣿⣤⣤⡄⠀⣠⣴⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⠀⠹⣿⢏⣠⣾⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠀⢸⣿⣸⣭⢯⣠⣸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⢠⡇⠀⢼⣻⡏⠉⡏⠉⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠸⣧⠀⠈⢳⡇⠀⡇⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣦⣠⣼⡇⠀⡇⠀⣳⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⠋⠓⠋⠉⠑⠋⠱⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡌⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡷⢾⣿⣿⣿⣿⡿⢷⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+#  Understanding Operational Roles Before Learning Data 
 
 Before learning Excel, SQL, Power BI, Python, Machine Learning, or AI, it's important to understand where business data actually comes from.
 
@@ -69,7 +8,7 @@ This guide breaks down the day-to-day responsibilities of common operational rol
 
 ---
 
-# Warehouse Associate
+# 🏭 Warehouse Associate
 
 ### Primary Responsibility
 
@@ -98,7 +37,7 @@ Move products through the warehouse accurately and efficiently.
 
 ---
 
-# Order Picker
+# 📦 Order Picker
 
 ### Primary Responsibility
 
@@ -124,7 +63,7 @@ Select products needed to fulfill customer orders.
 
 ---
 
-# Packer
+# 📫 Packer
 
 ### Primary Responsibility
 
@@ -148,7 +87,7 @@ Prepare customer orders for shipment.
 
 ---
 
-# Shipper
+# 🚚 Shipper
 
 ### Primary Responsibility
 
@@ -174,7 +113,7 @@ Ensure outbound shipments leave accurately and on time.
 
 ---
 
-# Receiver
+# 📥 Receiver
 
 ### Primary Responsibility
 
@@ -199,7 +138,7 @@ Receive inbound products from suppliers.
 
 ---
 
-# Forklift Operator
+# 🚜 Forklift Operator
 
 ### Primary Responsibility
 
@@ -224,7 +163,7 @@ Move inventory safely and efficiently.
 
 ---
 
-# Reach Truck Operator
+# 🏗️ Reach Truck Operator
 
 ### Primary Responsibility
 
@@ -246,7 +185,7 @@ Store and retrieve inventory from high-rack warehouse locations.
 
 ---
 
-# Inventory Associate
+# 🔍 Inventory Associate
 
 ### Primary Responsibility
 
@@ -270,7 +209,7 @@ Maintain inventory accuracy.
 
 ---
 
-# Cycle Counter
+# 🔢 Cycle Counter
 
 ### Primary Responsibility
 
@@ -293,7 +232,7 @@ Validate inventory accuracy.
 
 ---
 
-# Material Handler
+# 🔄 Material Handler
 
 ### Primary Responsibility
 
@@ -317,7 +256,7 @@ Support inventory movement throughout operations.
 
 ---
 
-# Team Lead
+# 👥 Team Lead
 
 ### Primary Responsibility
 
@@ -341,7 +280,7 @@ Coordinate frontline workers and daily operations.
 
 ---
 
-# Supervisor
+# 📋 Supervisor
 
 ### Primary Responsibility
 
@@ -367,7 +306,7 @@ Manage operational performance and labor.
 
 ---
 
-# Logistics Coordinator
+# 🗺️ Logistics Coordinator
 
 ### Primary Responsibility
 
@@ -391,7 +330,7 @@ Coordinate movement of products across the supply chain.
 
 ---
 
-# Transportation Coordinator
+# 🛣️ Transportation Coordinator
 
 ### Primary Responsibility
 
@@ -415,7 +354,7 @@ Manage transportation execution.
 
 ---
 
-# Dispatch Coordinator
+# 📡 Dispatch Coordinator
 
 ### Primary Responsibility
 
@@ -438,7 +377,7 @@ Coordinate drivers and transportation schedules.
 
 ---
 
-# Retail Associate
+# 🛍️ Retail Associate
 
 ### Primary Responsibility
 
@@ -461,7 +400,7 @@ Serve customers and maintain store operations.
 
 ---
 
-# Manufacturing Operator
+# ⚙️ Manufacturing Operator
 
 ### Primary Responsibility
 
@@ -485,7 +424,7 @@ Operate equipment and produce products.
 
 ---
 
-# Production Worker
+# 🔩 Production Worker
 
 ### Primary Responsibility
 
@@ -507,7 +446,7 @@ Support manufacturing activities.
 
 ---
 
-# Food Processing Worker
+# 🥩 Food Processing Worker
 
 ### Primary Responsibility
 
@@ -530,7 +469,7 @@ Process and package food products safely.
 
 ---
 
-# Why This Matters
+# 🤔 Why This Matters
 
 Most people see these jobs as operational roles.
 
